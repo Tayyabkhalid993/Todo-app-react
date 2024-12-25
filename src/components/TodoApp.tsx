@@ -44,15 +44,15 @@ function TodoApp() {
   return (
    <TodoProvider value={{todos,addTodos,updateTodos,deleteTodos, toggleComplete}}>
 
-    <div className='flex flex-col gap-4 max-w-[450px]'>
+    <div className='flex flex-col gap-4 max-w-[450px] mb-10'>
 
                     <div className="py-4 px-4 h-18 bg-white/50 rounded-lg backdrop-blur-md shadow-2xl">
                         {/* Todo form goes here */} 
                         <TodoForm />
                     </div>
    
-                <div className="w-full min-h-80 max-w-3xl mx-auto bg-white/50 rounded-lg backdrop-blur-md shadow-2xl px-4 py-1 ">
-                    <h1 className="text-2xl font-thin text-center mb-2 mt-2">Todo List</h1>
+                <div className="w-full min-h-80 max-w-3xl mx-auto bg-white/50 rounded-lg backdrop-blur-md shadow-2xl px-4 py-2">
+                    <h1 className="text-2xl font-normal text-center mb-2 mt-2">Todo List</h1>
                 <hr className=' bg-white/50 mb-5' />
                     <div className="flex flex-col gap-y-3">
                         {/*Loop and Add TodoItem here */}
