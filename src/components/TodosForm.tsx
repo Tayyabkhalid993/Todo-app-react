@@ -11,7 +11,7 @@ function TodoForm() {
     if (!todo) return
 
     console.log("Adding todo:", todo) // Debug log
-    addTodos({ todo, completed: false })
+    addTodos({id:Date.now(), todo, completed: false })
     setTodo("")
   }
 
