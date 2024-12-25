@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { TodoProvider } from '../contexts'
-import { Time, TodoForm, TodoItem } from './'
+import {TodoForm, TodoItem } from './'
 
 type Todo = {
   id: number
