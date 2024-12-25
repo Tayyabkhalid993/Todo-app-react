@@ -18,9 +18,6 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
     },
     rules: {
-      "react/no-unescaped-entities": "off",
-      "react/display-name": "off",
-      "react/prop-types": "off",
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
