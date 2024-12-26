@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTodo } from '../contexts'
-
+import {Pencil, Save, Trash} from 'lucide-react'
 type TodoItemProps = {
   todo: {
     id: number
@@ -44,7 +44,7 @@ function TodoItem({ todo }: TodoItemProps) {
         readOnly={!isTodoEditable}
       />
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+        className="inline-flex w-6 h-6 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
         onClick={() => {
           if (todo.completed) return
 
@@ -54,13 +54,13 @@ function TodoItem({ todo }: TodoItemProps) {
         }}
         disabled={todo.completed}
       >
-        {isTodoEditable ? '📁' : '✏️'}
+        {isTodoEditable ? <Save height={12}/> : <Pencil height={12} />}
       </button>
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
+        className="inline-flex w-6 h-6 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
         onClick={() => deleteTodos(todo.id)}
       >
-        ❌
+       <Trash height={13}/>
       </button>
     </div>
   )
