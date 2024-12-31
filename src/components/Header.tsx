@@ -11,10 +11,10 @@ const Header: React.FC = () => {
               <a href="/" className="hover:text-gray-300 transition duration-300 ease-in-out">Home</a>
             </li>
             <li>
-              <a href="/" className="hover:text-gray-300">About</a>
+              <a href="/" className="hover:text-gray-300 transition duration-300 ease-in-out">About</a>
             </li>
             <li>
-              <a href="/" className="hover:text-gray-300">Contact</a>
+              <a href="/" className="hover:text-gray-300 transition duration-300 ease-in-out">Contact</a>
             </li>
           </ul>
         </nav>
